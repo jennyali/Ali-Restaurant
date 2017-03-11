@@ -1,0 +1,41 @@
+{
+  "name": "ali-restaurant",
+  "version": "1.0.0",
+  "description": "basic website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jennyali/Ali-Restaurant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jennyali/Ali-Restaurant/issues"
+  },
+  "homepage": "https://github.com/jennyali/Ali-Restaurant#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "bluebird": "^3.5.0",
+    "bootstrap-sass": "^3.3.7",
+    "jquery": "^3.1.1",
+    "lodash": "^4.17.4",
+    "node-sass": "^4.5.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.4.0",
+    "babel-preset-es2015": "^6.22.0",
+    "css-loader": "^0.27.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "postcss-loader": "^1.3.3",
+    "precss": "^1.4.0",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.13.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  }
+}
