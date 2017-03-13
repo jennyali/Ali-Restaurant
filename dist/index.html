@@ -13,14 +13,56 @@
 </head>
         
 <body>
+    <div class="page">
+        <header class="container">
+            <div class="jumbotron">
+                <h2>
+                    Hello World
+                </h2>
+            </div>
+        </header>
 
-    <header class="container">
-        <div class="jumbotron">
-            <h2>
-                Hello World
+        <!-- Mobile header for small screens -->
+
+
+        <div class="mobile-header">
+            <button>
+                <span class="icon-bars"></span>
+            </button>
+            <h2 class="mobile-header__title">
+                Home
             </h2>
         </div>
-    </header>
+
+            <div class="mobile-side-menu">
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#">Home</a></li>
+
+                    <li class="list-group-item">
+                        <a href="#">About</a>
+                        <button class="pull-right" data-toggle="collapse" data-target="#about-li__sub-menu">
+                            <span class="icon-arrow-37"></span>
+                        </button>
+                    </li>
+                    <div>
+                        <ul id="about-li__sub-menu" class="collapse">
+                            <li class="list-group-item"><a href="#">Services</a></li>
+                            <li class="list-group-item"><a href="#">Gallery</a></li>
+                            <li class="list-group-item"><a href="#">News</a></li>
+                            <li class="list-group-item"><a href="#">Fresh</a></li>
+                            <li class="list-group-item"><a href="#">Archive</a></li>
+                        </ul>
+                    </div>
+                    <li class="list-group-item"><a href="#">Our menu</a></li>
+                    <li class="list-group-item"><a href="#">News</a></li>
+                    <li class="list-group-item"><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+               
+        </div>
+
+        <!-- Mobile header END -->
+    </div>
 
   <script src="../node_modules/jquery/dist/jquery.js"></script>
   <script src="./javascripts/bootstrap.js"></script>
