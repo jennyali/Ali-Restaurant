@@ -1,0 +1,47 @@
+/*
+    Styles for small screens 'mobile' header
+
+*/
+
+.mobile-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: $mobile-header-height;
+    display: flex;
+    border-bottom: 1px solid lighten($dark, 45%);
+    background-color: $light;
+
+        .mobile-header__btn {
+            padding: $mp-sm $mp-default;
+            padding-right: $mp-sm;
+            font-size: $font-size-lg;
+        }
+
+        .mobile-header__title {
+            margin: 0;
+            font-size: $font-size-lg;
+            text-transform: uppercase;
+            line-height: $mobile-header-height;
+        }
+}
+
+.mobile-side-menu {
+    position: fixed;
+    top: $mobile-header-height;
+    right: 0;
+    left: -$mobile-side-menu-width;
+    width: $mobile-side-menu-width;
+    transition: $mobile-side-menu-transition;
+    
+    &.active {
+        left: 0;
+        transition: $mobile-side-menu-transition;
+    }
+
+}
+
+.mobile-side-menu__nav {
+
+}

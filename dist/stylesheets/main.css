@@ -5047,4 +5047,70 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+/*===========================
+
+        GLOBAL VARIABLES
+
+=============================*/
+/* color
+-----------------------*/
+/* font-families
+-----------------------*/
+/* font-size
+-----------------------*/
+/* margin/padding sizing
+-----------------------*/
+/* breakpoints
+-----------------------*/
+/*===========================================
+
+            ELEMENT VARIABLES
+
+==============================================*/
+/*===========================
+
+            MIXINS
+
+=============================*/
+body {
+  padding-top: 56px; }
+
+/*
+    Styles for small screens 'mobile' header
+
+*/
+.mobile-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #d9d9d9;
+  background-color: #FFFFFF; }
+  .mobile-header .mobile-header__btn {
+    padding: 10px 15px;
+    padding-right: 10px;
+    font-size: 24px; }
+  .mobile-header .mobile-header__title {
+    margin: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 56px; }
+
+.mobile-side-menu {
+  position: fixed;
+  top: 56px;
+  right: 0;
+  left: -240px;
+  width: 240px;
+  -webkit-transition: left 0.25s;
+  transition: left 0.25s; }
+  .mobile-side-menu.active {
+    left: 0;
+    -webkit-transition: left 0.25s;
+    transition: left 0.25s; }
+
 /*# sourceMappingURL=main.css.map*/

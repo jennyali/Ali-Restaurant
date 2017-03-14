@@ -3962,7 +3962,23 @@ var _ = __webpack_require__(301);
 
 // ==== JQuery
 
-$(document).ready(function () {});
+$(document).ready(function () {
+
+    // view
+    var $mobileHeader = $('.mobile-header');
+    var $mobileHeaderBtn = $('.mobile-header__btn');
+    var $mobileSideMenu = $('.mobile-side-menu');
+
+    //controller
+
+    $mobileHeaderBtn.on('click', function () {
+        mobileSideMenuHandler(this);
+    });
+
+    function mobileSideMenuHandler(selector) {
+        $mobileSideMenu.toggleClass('active');
+    }
+});
 
 /***/ }),
 /* 118 */
