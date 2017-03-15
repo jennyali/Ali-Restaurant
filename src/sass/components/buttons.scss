@@ -1,0 +1,22 @@
+
+
+.btn-arrow {
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    font-size: $font-size-xs;
+    height: $btn-arrow-size;
+    width: $btn-arrow-size;
+    padding-top: $btn-arrow-padding-top;
+    transform: rotate(180deg);
+    transition: transform 0.5s;
+
+
+    &.collapsed {
+        transform: rotate(-0deg);
+        transition: transform 0.5s;
+    }
+}
+
+
+
