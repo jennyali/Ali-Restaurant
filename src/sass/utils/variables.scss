@@ -13,7 +13,7 @@ $colors : (
     contrast: #6ACAD6,
     extra: lighten(#F98A93, 15%),
     light: #FFFFFF,
-    dark: lighten(#000000, 40%),
+    dark: #000000,
 );
 
 $primary-color: map-get($map: $colors, $key: primary);
@@ -91,6 +91,15 @@ $bp-lg: map-get($map: $breakpoints, $key: lg);
 
 ==============================================*/
 
+// == GLOBAL
+
+// z-index
+$bottom-level: -1;
+$top-level: 9999;
+
+
+//-----------------------
+
 // .mobile-header
 $mobile-header-height: 56px;
 
@@ -99,3 +108,10 @@ $mobile-side-menu-width: 240px;
 
 // .mobile-side-menu
 $mobile-side-menu-transition: left 0.25s;
+
+// .btn-arrow
+$btn-arrow-size: 32px;
+$btn-arrow-padding-top: 7px;
+
+// #home-food-carousel
+$food-carousel-height: 130px;

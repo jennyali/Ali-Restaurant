@@ -1,0 +1,91 @@
+
+.home-content {}
+
+.home-content__section {}
+
+#home-food-carousel {
+    height: $food-carousel-height;
+    overflow: hidden;
+
+        .carousel-inner {
+            height: inherit;
+            background: $dark;
+        }
+
+        .item {
+            .item__caption {
+                opacity: 0;
+                transition: opacity 0.5s;
+            }
+
+            &.active {
+                .item__caption {
+                    opacity: 1;
+                    transition: opacity 0.5s;
+                }
+            }
+        }
+
+        .item__img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: $bottom-level;
+            opacity: 0.7;
+        }
+
+        .item__caption {
+            text-align: center;
+            color: $light;
+            height: $food-carousel-height;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-transform: uppercase;
+
+            h2, h3 {
+                margin: 0;
+            }
+        }
+
+        .carousel-control {
+            display: flex;
+            align-items: center;
+            padding: $mp-sm;
+
+            &.right {
+                justify-content: flex-end;
+        }
+    }
+}
+
+
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+        
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+}
+
+

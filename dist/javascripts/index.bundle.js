@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 306);
+/******/ 	return __webpack_require__(__webpack_require__.s = 307);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -3954,7 +3954,7 @@ module.exports = __webpack_amd_options__;
 
 __webpack_require__(118);
 
-__webpack_require__(305);
+__webpack_require__(306);
 // ==== Setup
 
 var Promise = __webpack_require__(119);
@@ -3964,20 +3964,9 @@ var _ = __webpack_require__(301);
 
 $(document).ready(function () {
 
-    // view
-    var $mobileHeader = $('.mobile-header');
-    var $mobileHeaderBtn = $('.mobile-header__btn');
-    var $mobileSideMenu = $('.mobile-side-menu');
+  __webpack_require__(305);
 
-    //controller
-
-    $mobileHeaderBtn.on('click', function () {
-        mobileSideMenuHandler(this);
-    });
-
-    function mobileSideMenuHandler(selector) {
-        $mobileSideMenu.toggleClass('active');
-    }
+  $('.carousel').carousel();
 });
 
 /***/ }),
@@ -24302,12 +24291,38 @@ exports.clearImmediate = clearImmediate;
 
 /***/ }),
 /* 305 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+// view
+var $mobileHeader = $('.mobile-header');
+var $mobileHeaderBtn = $('.mobile-header__btn');
+var $mobileSideMenu = $('.mobile-side-menu');
+var $mobileSideMenuList = $('#about-li__sub-menu');
+
+//controller
+
+$mobileHeaderBtn.on('click', function () {
+    mobileSideMenuHandler(this);
+});
+
+function mobileSideMenuHandler(selector) {
+
+    $mobileSideMenu.toggleClass('active').find('.btn-arrow').addClass('collapsed');
+
+    $mobileSideMenuList.removeClass('in');
+}
+
+/***/ }),
+/* 306 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 306 */
+/* 307 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(117);

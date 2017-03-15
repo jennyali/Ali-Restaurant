@@ -5072,6 +5072,28 @@ button.close {
             MIXINS
 
 =============================*/
+.btn-arrow {
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  font-size: 10px;
+  height: 32px;
+  width: 32px;
+  padding-top: 7px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s; }
+  .btn-arrow.collapsed {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s; }
+
 body {
   padding-top: 56px; }
 
@@ -5088,12 +5110,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid #737373;
   background-color: #FFFFFF; }
   .mobile-header .mobile-header__btn {
     padding: 10px 15px;
     padding-right: 10px;
-    font-size: 24px; }
+    font-size: 24px;
+    outline: none; }
   .mobile-header .mobile-header__title {
     margin: 0;
     font-size: 24px;
@@ -5112,5 +5135,71 @@ body {
     left: 0;
     -webkit-transition: left 0.25s;
     transition: left 0.25s; }
+
+#home-food-carousel {
+  height: 130px;
+  overflow: hidden; }
+  #home-food-carousel .carousel-inner {
+    height: inherit;
+    background: #000000; }
+  #home-food-carousel .item .item__caption {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+  #home-food-carousel .item.active .item__caption {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+  #home-food-carousel .item__img {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: -1;
+    opacity: 0.7; }
+  #home-food-carousel .item__caption {
+    text-align: center;
+    color: #FFFFFF;
+    height: 130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-transform: uppercase; }
+    #home-food-carousel .item__caption h2, #home-food-carousel .item__caption h3 {
+      margin: 0; }
+  #home-food-carousel .carousel-control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px; }
+    #home-food-carousel .carousel-control.right {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity; }
+
+.carousel-fade .carousel-inner .item, .carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
+  opacity: 0; }
+
+.carousel-fade .carousel-inner .active, .carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right {
+  opacity: 1; }
+
+.carousel-fade .carousel-inner .next, .carousel-fade .carousel-inner .prev, .carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); }
 
 /*# sourceMappingURL=main.css.map*/

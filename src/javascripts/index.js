@@ -11,22 +11,8 @@ var _ = require('lodash');
 
 $(document).ready(function(){
 
-// view
-var $mobileHeader = $('.mobile-header');
-var $mobileHeaderBtn = $('.mobile-header__btn');
-var $mobileSideMenu = $('.mobile-side-menu');
+require('./mobile-header/index.js');
 
-
-
-//controller
-
-$mobileHeaderBtn.on('click', function() {
-    mobileSideMenuHandler(this);
-});
-
-
-function mobileSideMenuHandler(selector) {
-    $mobileSideMenu.toggleClass('active');
-}
+$('.carousel').carousel();
 
 });
