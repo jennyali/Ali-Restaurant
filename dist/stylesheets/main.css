@@ -5058,6 +5058,9 @@ button.close {
 -----------------------*/
 /* font-size
 -----------------------*/
+/* other sizes
+    18px, 30px, 20px, 15px, 28px, 24px
+*/
 /* margin/padding sizing
 -----------------------*/
 /* breakpoints
@@ -5072,6 +5075,67 @@ button.close {
             MIXINS
 
 =============================*/
+h1, h2, h3, h4, h5 {
+  text-align: center; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase; }
+
+h2, h3 {
+  color: #FFFFFF; }
+
+h4, h5, h6 {
+  color: #0B601F; }
+
+h1 {
+  font: 30px/30px "Oleo Script", cursive;
+  letter-spacing: 3px;
+  color: #BF0006; }
+
+h2 {
+  font: 400 20px/20px "Raleway", sans-serif; }
+
+h3 {
+  font: 400 15px/15px "Raleway", sans-serif; }
+
+h4 {
+  font: 300 28px/30px "Raleway", sans-serif; }
+
+h4 + h5 {
+  margin-top: 20px; }
+
+h5 {
+  font: 300 24px/24px "Raleway", sans-serif; }
+
+h6 {
+  font: 300 24px/28px "Raleway", sans-serif; }
+
+h6 + p {
+  margin-top: 20px; }
+
+p {
+  font: 500 14px/24px "Open Sans", sans-serif;
+  color: gray; }
+  p.lead {
+    font: 300 18px/30px "Raleway", sans-serif;
+    text-align: center;
+    color: gray; }
+
+a {
+  color: inherit; }
+
+li > a {
+  font: 500 14px/24px "Open Sans", sans-serif;
+  color: gray; }
+
+hr {
+  height: 2px;
+  width: 228px;
+  border-top: 2px solid gray; }
+
+hr + p {
+  margin-top: 30px; }
+
 .btn-arrow {
   border-radius: 100%;
   border: none;
@@ -5093,6 +5157,14 @@ button.close {
     transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
     transition: transform 0.5s, -webkit-transform 0.5s; }
+
+figcaption > h6 {
+  margin-top: 30px; }
+
+.jumbotron {
+  margin-bottom: 0; }
+  .jumbotron > h1 {
+    color: #BF0006; }
 
 body {
   padding-top: 56px; }
@@ -5116,11 +5188,13 @@ body {
     padding: 10px 15px;
     padding-right: 10px;
     font-size: 24px;
-    outline: none; }
+    outline: none;
+    color: #000000; }
   .mobile-header .mobile-header__title {
     margin: 0;
-    font-size: 24px;
     text-transform: uppercase;
+    color: #000000;
+    font-size: 18px;
     line-height: 56px; }
 
 .mobile-side-menu {
@@ -5158,7 +5232,6 @@ body {
     z-index: -1;
     opacity: 0.7; }
   #home-food-carousel .item__caption {
-    text-align: center;
     color: #FFFFFF;
     height: 130px;
     display: -webkit-box;
@@ -5170,10 +5243,11 @@ body {
             flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    text-transform: uppercase; }
+            justify-content: center; }
     #home-food-carousel .item__caption h2, #home-food-carousel .item__caption h3 {
       margin: 0; }
+    #home-food-carousel .item__caption h2 + h3 {
+      margin-top: 5px; }
   #home-food-carousel .carousel-control {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5201,5 +5275,11 @@ body {
   left: 0;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0); }
+
+#home-section-welcome article {
+  margin-top: 30px; }
+
+#home-section-welcome .container {
+  padding: 0 30px; }
 
 /*# sourceMappingURL=main.css.map*/

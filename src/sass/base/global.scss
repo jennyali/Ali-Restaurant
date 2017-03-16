@@ -1,0 +1,86 @@
+
+// ======   Font-styles  ========//
+
+// headings
+
+h1, h2, h3, h4, h5 {
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+
+h2, h3 {
+    color: $light;
+}
+
+h4, h5, h6 {
+    color: $primary-color;
+}
+
+h1 {
+    font: 30px/30px $font-family-heading;
+    letter-spacing: 3px;
+    color: $contrast-color;
+}
+
+h2 {
+    font: 400 20px/20px $font-family-sub-heading;
+}
+
+h3 {
+    font: 400 15px/15px $font-family-sub-heading;
+}
+
+h4 {
+    font: 300 28px/30px $font-family-sub-heading;
+}
+
+h4+h5 {
+    margin-top: $mp-lg;
+}
+
+h5 {
+    font: 300 24px/24px $font-family-sub-heading;
+}
+
+h6 {
+    font: 300 24px/28px $font-family-sub-heading;
+}
+
+h6+p {
+    margin-top: $mp-lg;
+}
+
+// headings END -------------------------------------
+
+p {
+    font: 500 14px/24px $font-family-paragraph;
+    color: $grey;
+
+    &.lead {
+        font: 300 18px/30px $font-family-sub-heading;
+        text-align: center;
+        color: $grey;
+    }
+}
+
+a {
+    color: inherit;
+}
+
+li > a {
+    font: 500 14px/24px $font-family-paragraph;
+    color: $grey;
+}
+
+hr {
+    height: 2px;
+    width: 228px;
+    border-top: 2px solid $grey;
+}
+
+hr+p {
+    margin-top: $mp-double;
+}

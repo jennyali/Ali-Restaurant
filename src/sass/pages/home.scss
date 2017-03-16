@@ -1,7 +1,4 @@
 
-.home-content {}
-
-.home-content__section {}
 
 #home-food-carousel {
     height: $food-carousel-height;
@@ -35,16 +32,18 @@
         }
 
         .item__caption {
-            text-align: center;
             color: $light;
             height: $food-carousel-height;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            text-transform: uppercase;
 
             h2, h3 {
                 margin: 0;
+            }
+
+            h2+h3 {
+                margin-top: $mp-xs;
             }
         }
 
@@ -85,6 +84,17 @@
             left: 0;
             transform: translate3d(0, 0, 0);
         }
+    }
+}
+
+#home-section-welcome {
+
+    article {
+        margin-top: $mp-double;
+    }
+
+    .container {
+        padding: 0 $mp-double;
     }
 }
 
