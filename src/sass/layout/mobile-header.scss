@@ -18,12 +18,14 @@
             padding-right: $mp-sm;
             font-size: $font-size-lg;
             outline: none;
+            color: $dark;
         }
 
         .mobile-header__title {
             margin: 0;
-            font-size: $font-size-lg;
             text-transform: uppercase;
+            color: $dark;
+            font-size: 18px;
             line-height: $mobile-header-height;
         }
 }
@@ -43,7 +45,4 @@
 
 }
 
-.mobile-side-menu__nav {
-
-}
 

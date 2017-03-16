@@ -8,10 +8,10 @@
 -----------------------*/
 
 $colors : (
-    primary: #F98A93,
-    secondary: #000000,
-    contrast: #6ACAD6,
-    extra: lighten(#F98A93, 15%),
+    primary: #0B601F,
+    secondary: #1F9138,
+    contrast: #BF0006,
+    //extra: lighten(#F98A93, 15%),
     light: #FFFFFF,
     dark: #000000,
 );
@@ -19,23 +19,27 @@ $colors : (
 $primary-color: map-get($map: $colors, $key: primary);
 $secondary-color: map-get($map: $colors, $key: secondary);
 $contrast-color: map-get($map: $colors, $key: contrast);
-$extra-color: map-get($map: $colors, $key: extra);
+//$extra-color: map-get($map: $colors, $key: extra);
 $dark: map-get($map: $colors, $key: dark);
 $light: map-get($map: $colors, $key: light);
-$grey: lighten(map-get($map: $colors, $key: dark), 10%);
+$grey: lighten(map-get($map: $colors, $key: dark), 50%);
 
 
 /* font-families
 -----------------------*/
 
-$font-family-heading: 'Mogra', cursive;
-$font-family-sub-heading: 'Oswald', sans-serif;
+$font-family-heading: 'Oleo Script', cursive;
+$font-family-sub-heading: 'Raleway', sans-serif;
 $font-family-paragraph: 'Open Sans', sans-serif;
 
 
 /* font-size
 -----------------------*/
 // BS default = 14px
+
+/* other sizes
+    18px, 30px, 20px, 15px, 28px, 24px
+*/
 
 $font-size: (
     xxxlg: 42px,
@@ -47,6 +51,7 @@ $font-size: (
     sm: 12px,
     xs: 10px,
 );
+
 
 $font-size-xxxlg:  map-get($map: $font-size, $key: xxxlg);
 $font-size-xxlg:  map-get($map: $font-size, $key: xxlg);
@@ -63,6 +68,7 @@ $font-size-xs:  map-get($map: $font-size, $key: xs);
 // BS default = 15px
 // mp = margin/padding
 
+$mp-xs: 5px;
 $mp-sm: 10px;
 $mp-default: 15px;
 $mp-lg: 20px;
